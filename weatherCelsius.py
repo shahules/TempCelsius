@@ -15,7 +15,7 @@ except ImportError:
   
   
 try:
-   res=requests.get("https://www.msn.com/en-us/weather")
+   res=requests.get("https://www.msn.com/en-uk/weather")
 except Exception as e:
   print(colored("No Internet","blue"))
   exit(0)
