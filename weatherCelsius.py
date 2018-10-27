@@ -10,14 +10,14 @@ try:
    from math import floor as f
    from termcolor import colored
 except ImportError:
-  print("import error")
+  print("IMPORT ERROR")
   
   
   
 try:
    res=requests.get("https://www.msn.com/en-us/weather")
 except Exception as e:
-  print(colored("No Internet","blue"))
+  print(colored("No INTERNET","blue"))
   exit(0)
 bsobj=BeautifulSoup(res.text,"html.parser")
 ftemp=bsobj.find("span",{"class":"current"})
